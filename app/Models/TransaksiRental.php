@@ -44,4 +44,5 @@ class TransaksiRental extends Model
         'user_id'
     );
 }
+
 }

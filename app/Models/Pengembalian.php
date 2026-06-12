@@ -19,4 +19,6 @@ class Pengembalian extends Model
             'transaksi_id'
         );
     }
+    
+    
 }

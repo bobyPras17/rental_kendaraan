@@ -15,11 +15,11 @@
 
     <style>
         body{
-    margin:0;
-    padding:0;
-    background:#eef2f7;
-    font-family:'Poppins',sans-serif;
-    min-height:100vh;
+            margin:0;
+            padding:0;
+            background:#eef2f7;
+            font-family:'Poppins',sans-serif;
+            min-height:100vh;
 }
 
         /* ================= SIDEBAR ================= */
@@ -219,7 +219,13 @@
                 .classList
                 .toggle('active');
         }
-    </script>
+        setTimeout(function () {
+        let alert = document.querySelector('.alert');
 
+        if (alert) {
+            alert.remove();
+        }
+    }, 3000);
+    </script>
 </body>
 </html>

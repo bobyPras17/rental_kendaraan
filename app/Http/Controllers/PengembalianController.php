@@ -23,11 +23,16 @@ class PengembalianController extends Controller
     }
 
     public function store(Request $request)
-    {
-        Pengembalian::create($request->all());
+{
+    Pengembalian::create([
+        'transaksi_id' => $request->transaksi_id,
+        'tgl_dikembalikan' => $request->tgl_dikembalikan,
+        'denda' => $request->denda,
+    ]);
 
-        return redirect()->route('pengembalian.index')->with('success', 'Data pengembalian berhasil ditambahkan.');
-    }
+    return redirect()->route('pengembalian.index')
+        ->with('success', 'Data pengembalian berhasil ditambahkan.');
+}
 
     public function edit($id)
     {

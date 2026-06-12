@@ -31,14 +31,12 @@
         <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-3">
 
             <h4 class="mb-0">
-                <i class="bi bi-people-fill me-2"></i>
                 Data Pelanggan
             </h4>
 
             <a href="{{ route('pelanggan.create') }}"
                class="btn btn-light btn-sm fw-semibold">
-                <i class="bi bi-plus-circle-fill me-1"></i>
-                Tambah Pelanggan
+                + Tambah Pelanggan
             </a>
 
         </div>
@@ -46,8 +44,7 @@
         <div class="card-body">
         @if(session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <i class="bi bi-check-circle-fill me-2"></i>
-                    {{ session('success') }}
+                {{ session('success') }}
 
                 <button type="button"
                     class="btn-close"
@@ -65,23 +62,18 @@
                         <tr>
                             <th width="60">No</th>
                             <th>
-                                <i class="bi bi-person-fill me-1"></i>
                                 Nama
                             </th>
                             <th>
-                                <i class="bi bi-telephone-fill me-1"></i>
                                 No HP
                             </th>
                             <th>
-                                <i class="bi bi-geo-alt-fill me-1"></i>
                                 Alamat
                             </th>
                             <th>
-                                <i class="bi bi-credit-card-2-front-fill me-1"></i>
                                 No KTP
                             </th>
                             <th width="180" class="text-center">
-                                <i class="bi bi-gear-fill me-1"></i>
                                 Aksi
                             </th>
                         </tr>

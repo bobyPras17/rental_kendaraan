@@ -31,14 +31,12 @@
         <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-3">
 
             <h4 class="mb-0">
-                <i class="bi bi-receipt me-2"></i>
                 Data Transaksi
             </h4>
 
             <a href="{{ route('transaksi.create') }}"
                class="btn btn-light btn-sm fw-semibold">
-                <i class="bi bi-plus-circle-fill me-1"></i>
-                Tambah Transaksi
+                + Tambah Transaksi
             </a>
 
         </div>
@@ -46,8 +44,7 @@
         <div class="card-body">
         @if(session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <i class="bi bi-check-circle-fill me-2"></i>
-                    {{ session('success') }}
+                {{ session('success') }}
 
                 <button type="button"
                     class="btn-close"
@@ -66,32 +63,26 @@
                             <th width="60">No</th>
 
                             <th>
-                                <i class="bi bi-people-fill me-1"></i>
                                 Pelanggan
                             </th>
 
                             <th>
-                                <i class="bi bi-bicycle me-1"></i>
                                 Kendaraan
                             </th>
 
                             <th>
-                                <i class="bi bi-calendar-event me-1"></i>
                                 Tgl Rental
                             </th>
 
                             <th>
-                                <i class="bi bi-calendar-event me-1"></i>
                                 Tgl Kembali
                             </th>
 
                             <th>
-                                <i class="bi bi-cash-coin me-1"></i>
                                 Total Harga
                             </th>
 
                             <th width="180" class="text-center">
-                                <i class="bi bi-gear-fill me-1"></i>
                                 Aksi
                             </th>
                         </tr>

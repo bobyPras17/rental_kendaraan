@@ -35,13 +35,11 @@
         <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-3">
 
             <h4 class="mb-0">
-                <i class="bi bi-car-front-fill me-2"></i>
                 Data Kendaraan
             </h4>
 
             <a href="{{ route('kendaraan.create') }}"
                class="btn btn-light btn-sm fw-semibold">
-                <i class="bi bi-plus-circle-fill me-1"></i>
                 Tambah Kendaraan
             </a>
 
@@ -68,37 +66,29 @@
                         <tr>
                             <th width="60">No</th>
                             <th>
-                                <i class="bi bi-upc-scan me-1"></i>
                                 No Polisi
                             </th>
                             <th>
-                                <i class="bi bi-award-fill me-1"></i>
                                 Merk
                             </th>
                             <th>
-                                <i class="bi bi-truck-front-fill me-1"></i>
                                 Tipe
                             </th>
                             <th>
-                                <i class="bi bi-calendar-event-fill me-1"></i>
                                 Tahun
                             </th>
 
                             <th>
-                                <i class="bi bi-palette-fill me-1"></i>
-                                Warna
+                               Warna
                             </th>
 
                             <th>
-                                <i class="bi bi-cash-stack me-1"></i>
                                 Harga
                             </th>
                             <th>
-                                <i class="bi bi-check-circle-fill me-1"></i>
                                 Status
                             </th>
                             <th width="180" class="text-center">
-                                <i class="bi bi-gear-fill me-1"></i>
                                 Aksi
                             </th>
                         </tr>

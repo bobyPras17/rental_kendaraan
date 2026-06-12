@@ -25,10 +25,10 @@
                 @csrf
 
                 <div class="mb-3">
-                    <label class="form-label">Transaksi</label>
+                    <label class="form-label">id transaksi</label>
 
                     <select class="form-control mt-2" name="transaksi_id" id="" required>
-                        <option value="">Transaksi</option>
+                        <option value="">id transaksi</option>
                             @foreach ($transaksi as $t)
                         <option value="{{ $t->id }}" class="form-control">{{ $t->id }}</option>
                             @endforeach
